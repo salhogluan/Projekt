@@ -1,1 +1,27 @@
+package battleship;
+import javax.swing.JButton;
+import javax.swing.ImageIcon;
+import java.awt.event.ActionListener;
+import java.awt.Image;
+import java.awt.event.ActionEvent;
 
+
+ 
+public class Tile extends JButton implements ActionListener{
+public static ImageIcon WATER = new ImageIcon(new ImageIcon("C:\\Users\\anna_\\Pictures\\jul\\viktigt.jpg").getImage().getScaledInstance(80, 70, Image.SCALE_DEFAULT));
+public static ImageIcon HIT = new ImageIcon(new ImageIcon("C:\\Users\\anna_\\Pictures\\jul\\HIT.jpg").getImage().getScaledInstance(80, 70, Image.SCALE_DEFAULT));
+
+public Tile(){
+	addActionListener(this);
+	setIcon(WATER);
+	
+}
+
+
+public void actionPerformed(ActionEvent a) {
+	setIcon(HIT);
+	
+	
+}
+
+}

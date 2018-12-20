@@ -1,1 +1,23 @@
+package battleship;
 
+import java.awt.Color;
+import java.awt.GridLayout;
+import javax.swing.JPanel;
+
+public class Board extends JPanel {
+
+	Tile[] squares = new Tile[100];
+
+	Board() {
+		super(new GridLayout(10, 10));
+		for (int i = 0; i < 100; i++) {
+			squares[i] = new Tile();
+			this.add(squares[i]);
+			
+		}
+	}
+	
+	public void place(ShipSize ships) {
+		 
+	 }
+}
